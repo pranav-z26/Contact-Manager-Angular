@@ -4,19 +4,29 @@
       "id": 1,
       "cname": "json-server",
       "cemail": "xyz@gmail.com",
+      "cphone": 9568245216,
       "caddr": "Marsss"
     },
     {
       "cname": "de",
       "cemail": "vf",
+      "cphone": 7482245216,
       "caddr": "dv",
       "id": 2
     },
     {
       "cname": "dcww",
       "cemail": "veerre",
+      "cphone": 8568248616,
       "caddr": "rvg",
       "id": 3
+    },
+    {
+      "cname": "Check",
+      "cemail": "check",
+      "cphone": "7458216390",
+      "caddr": "check",
+      "id": 4
     }
   ]
 }
