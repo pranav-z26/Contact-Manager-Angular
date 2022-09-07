@@ -1,0 +1,29 @@
+<mat-card>
+    <mat-card-title>Contact Manager App</mat-card-title>
+    <mat-card-subtitle>Add contacts here</mat-card-subtitle>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Ex. Xyz" [(ngModel)]="contact.cname">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Ex. xyz@gmail.com"[(ngModel)]="contact.cemail">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Phone</mat-label>
+        <input matInput placeholder="9874563210">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Address</mat-label>
+        <input matInput placeholder="Mars" [(ngModel)]="contact.caddr">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="addContact()">Submit</button>
+
+</mat-card>
+
+<mat-divider></mat-divider>

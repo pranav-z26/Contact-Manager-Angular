@@ -1,0 +1,22 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "cname": "json-server",
+      "cemail": "xyz@gmail.com",
+      "caddr": "Marsss"
+    },
+    {
+      "cname": "de",
+      "cemail": "vf",
+      "caddr": "dv",
+      "id": 2
+    },
+    {
+      "cname": "dcww",
+      "cemail": "veerre",
+      "caddr": "rvg",
+      "id": 3
+    }
+  ]
+}

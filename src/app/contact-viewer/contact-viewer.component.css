@@ -1,0 +1,9 @@
+mat-card{
+    width: 15vw;
+    margin: 15px;
+}
+
+.cviewer{
+    display: flex;
+    flex-wrap: wrap;
+}
