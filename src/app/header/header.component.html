@@ -1,5 +1,15 @@
 <p>
     <mat-toolbar color="primary">
-        <span>Contact Manager</span>
+
+        <!-- method 1 using anchor tag -->
+        <!-- <a href="/dashboard" color="accent"> <mat-icon>home</mat-icon> </a> -->
+
+    <!-- method 2 using button and importing router in TS file -->
+        <button mat-icon-button color="accent" aria-label="Example icon button with a home icon" (click)="loadDashboard()">
+            <mat-icon>home</mat-icon>
+        </button>
+
+        <span>{{title}}</span>
+        
     </mat-toolbar>
 </p>
