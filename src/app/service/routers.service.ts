@@ -8,8 +8,14 @@ export class RoutersService {
 
   constructor(private router:Router) { }
 
-  toHome(){
-    this.router.navigate(['dashboard'])
+  toHome(username:string){
+    this.router.navigate(['dashboard',{
+      "username":username
+    }],{
+      queryParams:{
+        "loginTime":new Date().toTimeString()
+      }
+    })
   }
 
   toLogin(){

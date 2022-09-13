@@ -74,7 +74,8 @@ export class LoginComponent implements OnInit {
           counter++;
         }
         if (counter > 1) {
-          this.router.toHome()
+          localStorage.setItem("username", this.loginForm.value.username);
+          this.router.toHome(this.loginForm.value.username)
         }
       }
     })
