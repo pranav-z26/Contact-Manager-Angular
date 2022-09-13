@@ -28,5 +28,14 @@
       "caddr": "check",
       "id": 4
     }
-  ]
+  ],
+  "Users":[{
+    "id":1,
+    "username":"SRam",
+    "password":"sita@123",
+    "email": "ram@gmail.com",
+    "phone": "1234567890",
+    "firstname":"Ram",
+    "lastname":"Sharma"
+  }]
 }

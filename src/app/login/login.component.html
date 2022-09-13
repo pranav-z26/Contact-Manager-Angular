@@ -7,15 +7,23 @@
             <mat-label>User Name</mat-label>
             <input matInput type="text" formControlName="username">
         </mat-form-field>
-        {{getUsernameError()}}
+        <small>
+            {{getUsernameError()}}
+        </small>
         <br>
 
         <mat-form-field appearance="fill">
             <mat-label>Password</mat-label>
             <input matInput type="text" formControlName="password">
         </mat-form-field>
-        {{getPasswordError()}}
+        <small>
+            {{getPasswordError()}}
+        </small>
         <br>
         <button mat-raised-button color="primary" (click)="login()">Login</button>
     </form>
+    <br>
+    <mat-divider></mat-divider>
+    <br>
+    <p>New User?</p><a href="/register" color="accent"> Click to Register </a>
 </div>
