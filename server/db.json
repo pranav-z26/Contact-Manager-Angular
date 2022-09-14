@@ -29,13 +29,33 @@
       "id": 4
     }
   ],
-  "Users":[{
-    "id":1,
-    "username":"SRam",
-    "password":"sita@123",
-    "email": "ram@gmail.com",
-    "phone": "1234567890",
-    "firstname":"Ram",
-    "lastname":"Sharma"
-  }]
+  "Users": [
+    {
+      "id": 1,
+      "username": "SRam",
+      "password": "sita@123",
+      "email": "ram@gmail.com",
+      "phone": "1234567890",
+      "firstname": "Ram",
+      "lastname": "Sharma"
+    },
+    {
+      "username": "Pranav",
+      "password": "pranav@123",
+      "email": "pranav@gmail.com",
+      "phone": "",
+      "firstname": "",
+      "lastname": "",
+      "id": 2
+    },
+    {
+      "username": "abc",
+      "password": "abc@123",
+      "email": "abc@gmail.com",
+      "phone": "",
+      "firstname": "",
+      "lastname": "",
+      "id": 3
+    }
+  ]
 }

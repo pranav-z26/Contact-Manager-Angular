@@ -5,7 +5,7 @@
 
         <mat-form-field appearance="fill">
             <mat-label>User Name</mat-label>
-            <input matInput type="text" formControlName="username">
+            <input matInput type="text" formControlName="username" [(ngModel)]="user.username">
         </mat-form-field>
         <small>
             {{getUsernameError()}}
@@ -14,7 +14,7 @@
 
         <mat-form-field appearance="fill">
             <mat-label>Password</mat-label>
-            <input matInput type="text" formControlName="password">
+            <input matInput type="text" formControlName="password" [(ngModel)]="user.password">
         </mat-form-field>
         <small>
             {{getPasswordError()}}
@@ -32,7 +32,7 @@
 
         <mat-form-field appearance="fill">
             <mat-label>Email</mat-label>
-            <input matInput type="email" formControlName="email">
+            <input matInput type="email" formControlName="email" [(ngModel)]="user.email">
         </mat-form-field>
         <small>
             {{getEmailError()}}

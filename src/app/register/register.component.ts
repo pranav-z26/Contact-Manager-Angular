@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Usersm } from '../models/user/user.module';
+import { RoutersService } from '../service/routers.service';
+import { UserService } from '../service/user.service';
 
 @Component({
   selector: 'app-register',
@@ -8,7 +11,10 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  userarray:Array<Usersm> = [];
+  user:Usersm = new Usersm();
+
+  constructor(private userService:UserService, private routerService:RoutersService) { }
 
   registerForm = new FormGroup(
     {
@@ -95,5 +101,12 @@ export class RegisterComponent implements OnInit {
 
   register() {
     console.log("from login method", this.registerForm.value)
+   // add todo into the array
+   this.userarray.push(this.user);
+   // add todo into db.json
+   this.userService.addUsers(this.user)
+   .subscribe(data => console.log(data))
+   this.user  = new Usersm();
+   this.routerService.toLogin()
   }
 }
